@@ -9,3 +9,5 @@ if ($anoLancamento > 2022) {
 } else {
     echo "Esse filme não é um lançamento";
 }
+
+echo "teste";
