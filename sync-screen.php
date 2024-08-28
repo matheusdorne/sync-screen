@@ -22,3 +22,4 @@ $genero = match ($nomeFilme) {
 };
 
 echo $genero;
+echo $argc;
