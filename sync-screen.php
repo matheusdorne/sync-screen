@@ -1,13 +1,31 @@
 <?php
-$anoLancamento = $argv[1] ?? 2022;
 
-echo $anoLancamento."\n";
+echo "Bem-vindo(a) ao SyncScreen!\n ";
+
+$nomeFilme = "Matrix";
+
+$anoLancamento = 2022;
+
+$quantidadeDeNotas = $argc - 1;
+
+$somaDeNotas = 0;
+
+for ($contador = 1; $contador < $argc; $contador++) {
+    $somaDeNotas += $argv[$contador];
+}
+
+
+
+
+$notaFilme = $somaDeNotas / $quantidadeDeNotas;
+
+echo $notaFilme;
 
 
 if ($anoLancamento > 2022) {
- echo "Esse filme é um lancaçmento\n";
+ echo "\n Esse filme é um lancaçmento\n";
 } else {
-    echo "Esse filme não é um lançamento\n";
+    echo "\n Esse filme não é um lançamento\n";
 }
 
 
@@ -22,4 +40,4 @@ $genero = match ($nomeFilme) {
 };
 
 echo $genero;
-echo $argc;
+var_dump($argv);
