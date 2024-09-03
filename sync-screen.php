@@ -8,16 +8,15 @@ $anoLancamento = 2022;
 
 $quantidadeDeNotas = $argc - 1;
 
-$somaDeNotas = 0;
+$notas = [];
 
-for ($contador = 1; $contador < $argc; $contador++) {
-    $somaDeNotas += $argv[$contador];
+for ($i = 1; $i < $argc; $i++) {
+    $notas[] = (float) $argv[$i];
 }
 
+$somaDeNotas = 0;
 
-
-
-$notaFilme = $somaDeNotas / $quantidadeDeNotas;
+$notaFilme = array_sum($notas) / $quantidadeDeNotas;
 
 echo $notaFilme;
 
