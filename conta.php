@@ -5,6 +5,11 @@ $conta = [
     'saldo' => 1000.00
 ];
 
+echo "********************\n";
+echo "Titular: $conta[titular]\n";
+echo "Saldo atual: R$ $conta[saldo]\n";
+echo "********************\n";
+
 
 while(true) {
     echo "\n1. Consultar saldo atual \n";
