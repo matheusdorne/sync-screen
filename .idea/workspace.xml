@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="489613cb-cf3e-4f34-a943-62dcda368ac0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/conta.php" beforeDir="false" afterPath="$PROJECT_DIR$/conta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +24,12 @@
     &quot;assignee&quot;: &quot;matheusdorne&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/matheusdorne/sync-screen.git",
-    "accountId": "01e4c864-9f1c-46f2-9752-5d82eb24621b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/matheusdorne/sync-screen.git&quot;,
+    &quot;accountId&quot;: &quot;01e4c864-9f1c-46f2-9752-5d82eb24621b&quot;
   }
-}]]></component>
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/bin/php" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -81,7 +81,8 @@
       <workItem from="1724808482597" duration="641000" />
       <workItem from="1725027610918" duration="4539000" />
       <workItem from="1725318567652" duration="1765000" />
-      <workItem from="1725325486110" duration="6352000" />
+      <workItem from="1725325486110" duration="7564000" />
+      <workItem from="1725490920413" duration="424000" />
     </task>
     <servers />
   </component>
