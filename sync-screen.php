@@ -46,3 +46,5 @@ $genero = match ($nomeFilme) {
 
 echo $genero;
 var_dump($argv);
+
+echo 'teste';
