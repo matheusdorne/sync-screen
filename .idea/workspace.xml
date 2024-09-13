@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="489613cb-cf3e-4f34-a943-62dcda368ac0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ano-bissexto.php" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/ano-bissexto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrayrepetido.php" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/arrayrepetido.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conta.php" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/conta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conversor-celsius.php" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/conversor-celsius.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imc.php" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/imc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imparesde0a100.php" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/imparesde0a100.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notaaluno.php" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/notaaluno.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saudacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/saudacao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync-screen.php" beforeDir="false" afterPath="$PROJECT_DIR$/sync-screen.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
