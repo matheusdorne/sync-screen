@@ -1,15 +1,6 @@
 <?php
 
-function exibeMensagemLancamento($ano)
-{
-    if ($ano > 2022) {
-        echo "Esse filme é um lançamento\n";
-    } elseif ($ano > 2020 && $ano <= 2022) {
-        echo "Esse filme ainda é novo \n";
-    } else {
-        echo "Esse filme não é um lançamento\n";
-    }
-}
+require "funcoes.php";
 
 echo "Bem-vindo(a) ao SyncScreen!\n ";
 
@@ -48,3 +39,23 @@ echo $genero;
 var_dump($argv);
 
 echo 'teste';
+
+var_dump($notas);
+sort($notas);
+var_dump($notas);
+$menorNota = min($notas);
+echo $menorNota;
+
+$filme = [
+    "nome" => "Matrix",
+    "ano" => 2022,
+    "nota" => 8.5,
+    "genero" => "Ficção Científica",
+];
+
+var_dump($filme);
+$posicaoX = strpos($filme["nome"],"x");
+var_dump($posicaoX);
+
+$substring = substr($filme["nome"], 0, 3);
+var_dump($substring);
