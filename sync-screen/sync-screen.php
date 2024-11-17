@@ -59,3 +59,6 @@ var_dump($posicaoX);
 
 $substring = substr($filme["nome"], 0, 3);
 var_dump($substring);
+
+$filmeComoStringJson = json_encode($filme);
+file_put_contents(__DIR__.'/filme.json', $filmeComoStringJson);

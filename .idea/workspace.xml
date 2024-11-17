@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="489613cb-cf3e-4f34-a943-62dcda368ac0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/exercicios/lista12.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync-screen/funcoes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sync-screen/importar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync-screen.php" beforeDir="false" afterPath="$PROJECT_DIR$/sync-screen/sync-screen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/lista12.php" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/lista12.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync-screen/sync-screen.php" beforeDir="false" afterPath="$PROJECT_DIR$/sync-screen/sync-screen.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,7 @@
       <workItem from="1725490920413" duration="424000" />
       <workItem from="1725928489766" duration="1757000" />
       <workItem from="1731702469642" duration="1102000" />
-      <workItem from="1731839584976" duration="5415000" />
+      <workItem from="1731839584976" duration="6699000" />
     </task>
     <servers />
   </component>
