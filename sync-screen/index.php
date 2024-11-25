@@ -1,6 +1,6 @@
 <?php
 
-require "funcoes.php";
+require "src/funcoes.php";
 
 echo "Bem-vindo(a) ao SyncScreen!\n ";
 
@@ -46,12 +46,10 @@ var_dump($notas);
 $menorNota = min($notas);
 echo $menorNota;
 
-$filme = [
-    "nome" => "Matrix",
-    "ano" => 2022,
-    "nota" => 8.5,
-    "genero" => "Ficção Científica",
-];
+$filme = criaFilme("Matrix",
+    2022,
+    8.5,
+    "Ficção Científica");
 
 var_dump($filme);
 $posicaoX = strpos($filme["nome"],"x");
