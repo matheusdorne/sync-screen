@@ -11,12 +11,14 @@ function exibeMensagemLancamento($ano)
 }
 
 function criaFilme (string $nome, int $anoLancamento,
-                    float $nota, string $genero) : array
+                    float $nota, string $genero) : Filme
 {
-  return [
-      'nome' => $nome,
-      'ano' => $anoLancamento,
-      'nota' => $nota,
-      'genero' => $genero
-      ];
+    $filme = new Filme();
+    $filme->nome = $nome;
+    $filme->anoLancamento = $anoLancamento;
+    $filme->nota = $nota;
+    $filme->genero = $genero;
+
+  return $filme;
+
 }

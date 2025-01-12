@@ -1,62 +1,21 @@
 <?php
 
-require "src/funcoes.php";
+require __DIR__ . "/src/Modelo/Filme.php";
 
 echo "Bem-vindo(a) ao SyncScreen!\n ";
 
-$nomeFilme = "Matrix";
+$filme = new Filme();
+$filme->nome = "Thor Ragnarok";
+$filme->anoDeLancamento = 2021;
+$filme->genero = 'super-heroi';
+$filme->nota = 8.5;
 
-$anoLancamento = 2022;
-
-$quantidadeDeNotas = $argc - 1;
-
-$notas = [];
-
-for ($i = 1; $i < $argc; $i++) {
-    $notas[] = (float)$argv[$i];
-}
-
-$somaDeNotas = 0;
-
-$notaFilme = array_sum($notas) / $quantidadeDeNotas;
-
-echo $notaFilme;
-
-exibeMensagemLancamento($anoLancamento);
-
-
-$nomeFilme = "Filme 2";
-$nomeFilme = "Filme 1";
-
-$genero = match ($nomeFilme) {
-    "Filme 1" => "Ruim\n",
-    "Filme 2" => "Musica\n",
-    default => "gênero desconhecido",
-
-};
-
-echo $genero;
-var_dump($argv);
-
-echo 'teste';
-
-var_dump($notas);
-sort($notas);
-var_dump($notas);
-$menorNota = min($notas);
-echo $menorNota;
-
-$filme = criaFilme("Matrix",
-    2022,
-    8.5,
-    "Ficção Científica");
+$filme->avalia(10);
+$filme->avalia(9.7);
+$filme->avalia(7.8);
+$filme->avalia(5.5);
+$filme->avalia(8);
 
 var_dump($filme);
-$posicaoX = strpos($filme["nome"],"x");
-var_dump($posicaoX);
 
-$substring = substr($filme["nome"], 0, 3);
-var_dump($substring);
-
-$filmeComoStringJson = json_encode($filme);
-file_put_contents(__DIR__.'/filme.json', $filmeComoStringJson);
+echo $filme->media();
