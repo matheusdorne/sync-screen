@@ -1,10 +1,10 @@
 <?php
 
 class Filme{
-    public string $nome;
-    public int $anoDeLancamento;
-    public string $genero;
-    public array $notas = [];
+    private string $nome;
+    private int $anoDeLancamento;
+    private string $genero;
+    private array $notas = [];
 
     function avalia(float $nota): void
     {
@@ -17,6 +17,16 @@ class Filme{
       $quantidadeDeNotas = count($this->notas);
 
       return  $somaNotas / $quantidadeDeNotas;
+    }
+
+    public function  getAnoLancamento(): int
+    {
+        return $this->anoDeLancamento;
+    }
+
+    public function  setAnoLancamento(int $anoLancamento): void
+    {
+        $this->anoDeLancamento = $anoLancamento;
     }
 
 }
