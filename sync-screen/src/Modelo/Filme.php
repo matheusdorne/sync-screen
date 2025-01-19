@@ -1,32 +1,23 @@
 <?php
 
-class Filme{
-    private string $nome;
-    private int $anoDeLancamento;
-    private string $genero;
-    private array $notas = [];
+class Filme extends Titulo
+{
+    private array $notas;
 
-    function avalia(float $nota): void
+    //Quando definimos o modificador de acesso private no __construct,
+    // o atributo que é passado é promovido a propriedade, não sendo necessário realizar
+    // o vínculo $this->atributo = $atributo
+    public function __construct(
+        string $nome,
+        int $anoLancamento,
+        Genero $genero,
+        public readonly int $duracaoEmMinutos,
+    // readonly define como apenas leitura não podendo ser alterado
+        // // esses valores após a construção do objeto, com o public deixando de  ser necessário o uso dos métodos get
+    )
     {
-        $this->notas[] = $nota;
-    }
-
-    function media(): float
-    {
-      $somaNotas = array_sum($this->notas);
-      $quantidadeDeNotas = count($this->notas);
-
-      return  $somaNotas / $quantidadeDeNotas;
-    }
-
-    public function  getAnoLancamento(): int
-    {
-        return $this->anoDeLancamento;
-    }
-
-    public function  setAnoLancamento(int $anoLancamento): void
-    {
-        $this->anoDeLancamento = $anoLancamento;
+        parent::__construct($nome, $anoLancamento, $genero);
+        // Aqui estamos repassando os dados para a classe pai
     }
 
 }
