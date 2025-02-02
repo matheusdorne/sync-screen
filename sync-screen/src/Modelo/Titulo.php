@@ -1,24 +1,18 @@
 <?php
 
-class Titulo
+abstract class Titulo implements Avaliavel
 {
-    private array $notas;
+    use ComAvaliacao;
+
     public function __construct(
         public readonly string $nome,
-        public readonly int $anoLancmento,
+        public readonly int    $anoLancmento,
         public readonly Genero $genero,
 
-    ){
+    )
+    {
         $this->notas = [];
     }
 
-    public function avalia(float $nota): void
-    {
-        $this->notas[] = $nota;
-    }
-
-    public function media(): float
-    {
-           return  array_sum($this->notas) / count($this->notas);
-    }
+    abstract public function duracaoEmMinutos(): int;
 }

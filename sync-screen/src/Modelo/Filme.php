@@ -20,4 +20,10 @@ class Filme extends Titulo
         // Aqui estamos repassando os dados para a classe pai
     }
 
+    #[Override]
+    public function duracaoEmMinutos(): int
+    {
+      return $this->duracaoEmMinutos;
+    }
+
 }
