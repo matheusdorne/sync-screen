@@ -1,5 +1,7 @@
 <?php
 
+namespace SyncScreen\Modelo;
+
 trait ComAvaliacao
 {
     private array $notas = [];

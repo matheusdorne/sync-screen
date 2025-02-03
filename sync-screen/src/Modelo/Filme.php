@@ -1,5 +1,6 @@
 <?php
 
+namespace SyncScreen\Modelo;
 class Filme extends Titulo
 {
     private array $notas;
@@ -8,11 +9,11 @@ class Filme extends Titulo
     // o atributo que é passado é promovido a propriedade, não sendo necessário realizar
     // o vínculo $this->atributo = $atributo
     public function __construct(
-        string $nome,
-        int $anoLancamento,
-        Genero $genero,
+        string              $nome,
+        int                 $anoLancamento,
+        Genero              $genero,
         public readonly int $duracaoEmMinutos,
-    // readonly define como apenas leitura não podendo ser alterado
+        // readonly define como apenas leitura não podendo ser alterado
         // // esses valores após a construção do objeto, com o public deixando de  ser necessário o uso dos métodos get
     )
     {
@@ -23,7 +24,7 @@ class Filme extends Titulo
     #[Override]
     public function duracaoEmMinutos(): int
     {
-      return $this->duracaoEmMinutos;
+        return $this->duracaoEmMinutos;
     }
 
 }

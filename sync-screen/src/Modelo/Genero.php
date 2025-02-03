@@ -1,5 +1,7 @@
 <?php
 
+namespace SyncScreen\Modelo;
+
 enum Genero
 {
     case Acao;

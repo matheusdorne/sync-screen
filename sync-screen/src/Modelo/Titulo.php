@@ -1,5 +1,6 @@
 <?php
 
+namespace SyncScreen\Modelo;
 abstract class Titulo implements Avaliavel
 {
     use ComAvaliacao;

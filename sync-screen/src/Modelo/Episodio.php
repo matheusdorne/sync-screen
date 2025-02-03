@@ -1,5 +1,6 @@
 <?php
 
+namespace SyncScreen\Modelo;
 class Episodio implements Avaliavel
 {
 

@@ -1,5 +1,6 @@
 <?php
 
+namespace SyncScreen\Modelo;
 class Serie extends Titulo
 {
     public function  __construct(
